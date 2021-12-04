@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+ <meta charset="UTF-8">  
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>Mercado Liebre</title>
+</head>
+<body>
+<header>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <link rel="stylesheet" href="/css/estilos.css">
+<div class="head">
+    <a class="img" href="/"><img  src='/img/logo-mercado-liebre.svg' alt='Mercado de Liebres'></a>
+    <p><input class="busqueda" placeholder="Buscar productos, marcas"><i class="fas fa-search logo"></i></p>
+    <p class="center"><i class="fas fa-hand-holding-usd">Compra en cuotas y sin tarjeta de credito</i></p>
+</div>
+    <div class="menu">
+      <p>
+        <a href="">ofertas</a>&emsp;
+        <a href="">tiendas oficiales</a>&emsp;
+        <a href="">vender</a>&emsp;
+        <a href="">ayuda</a>&emsp;
+     </p>
+     <p><a href="">crea tu cuenta</a> <i class="fas fa-address-card"></i>&emsp;
+        <a href="/login">ingresar</a> <i class="fas fa-sign-in-alt"></i>&emsp;
+        <a href="">Mis compras</a> <i class="fas fa-shopping-basket"></i>
+     </p>
+    </div>
+    <div class="burger-menu">
+        <i class="fas fa-bars" ></i>
+    </div>
+</header>
+<main>
+<form action="/">
+    <h2>Formulario de Registro</h2><br><br>
+    <input type="text" name="nombre" placeholder="Nombre y apellido" minlength="5" required>
+    <br><br>
+    <input type="text" name="usuario" placeholder="Nombre de usuario" minlength="5" required>
+    <br><br>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <br><br><br>
+    <label for="nacimiento">Fecha de Nacimiento:</label><br>
+    <input type="date" name="nacimiento" placeholder="yyyy/mm/dd"required>
+    <br><br><br>
+    <input type="text" name="domicilio" placeholder="Domicilio">
+    <br><br><br>
+    <label for="usuario">Perfil de usuario</label><br><br>
+    <div>
+    <label>vendedor<input type="radio" name="usuario"></label>&emsp;
+    <label>comprador<input type="radio" name="usuario"></label>
+    </div>
+    <br><br>
+    <label for="intereses">Interés</label>
+    <br><br>
+    <div>
+    <label>Electroníca<input type="checkbox" name="intereses"></label>&emsp;
+    <label>Moda<input type="checkbox" name="intereses"></label>&emsp;
+    <label>Hogar<input type="checkbox" name="intereses"></label>&emsp;
+    <label>Juguetería<input type="checkbox" name="intereses"></label>&emsp;
+    <label>Vida sana<input type="checkbox" name="intereses"></label>
+    </div>
+    <br><br>
+    <label for="foto">Ingresa tu Foto de Usuario<br></label>
+    <input type="file" name="foto" accept=".jpg, .png">
+    <br><br>
+    
+    <input type="password" name="contraseña"minlength="6" placeholder="Ingresa tu Contraseña" required>
+    <br><br>
+    <input type="password" name="contraseña"minlength="6" placeholder="Confirma tu Contraseña" required>
+    <br><br>
+    <div>
+    <button class="enviar" type="submit" value="Enviar">Registrarse</button><br>
+    <button class="borrar "type="reset" value="Borrar">Borrar</button>
+    </div>
+</form>
+</main>
+<footer>
+    <div>
+      <i class="fas fa-credit-card icons"></i><br>
+      <strong>Pagá con tarjeto o en efectivo</strong>
+      <p>Con MercadoLiebreCash tienes cuotas sin interés 
+          con tarjeta o en efectivo en puntos de pago 
+          !Y siempre es seguro!</p><br><br>
+    </div>
+    <div>
+          <i class="fas fa-gift icons"></i><br>
+          <strong>Envío gratis dedes los $2,500</strong>
+      <p>Solo por estar registrado en MercadoLiebre tienes envios 
+          gratis en miles de productos. Es un beneficio de 
+          MercadoPuntos.
+      </p><br><br>
+    </div>
+    <div>
+      <i class="fas fa-user-shield icons"></i><br>
+      <strong>Seguridad de principio a fin</strong>
+      <p>No te gusta? !Devuelvelo! En MercadoLiebre no hay nada
+          que no puedas hacer porque estás siempre protegido
+      </p>
+    </div>
+</footer>
+<br><br><br>
+<p>Copyrigth 1999-2020 MercadoLiebre S.R.L.</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+{"Producto":"Cafetera Moulinex",
+"Costo":6.770,
+"Descuento":40},
+
+{
+"Producto":"MacBook Pro 2019",
+"Costo":230.000,
+"Descuento":20},
+
+{
+"Producto":"Samsung Galaxy S10",
+"Costo":70.500,
+"Descuento":10},
+
+{
+"Producto":"SmartTv Samsung 43'",
+"Costo":23.200,
+"Descuento":5}
+]

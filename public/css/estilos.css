@@ -1,0 +1,293 @@
+*{
+    font-family: 'Roboto';
+    text-size-adjust: 12px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}   
+
+header{
+    background-color: #EAC926;
+    padding: 2%;
+    }
+    .head{ 
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .img{   
+        width: 30%;  
+    }
+    .busqueda{    
+        border: solid black 0.5px;
+        border-radius: 3px;
+        padding-top: 2px;
+        margin-top: 20px;       
+        color: darkgray;
+        width: 250px;
+    }
+    .center{
+        margin-top: 20px;
+    }
+    .logo{
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 5px;
+        text-align: center;
+        width: 18px;
+        color:black;
+        padding-top: 1px;
+        padding-bottom: 3px;
+        margin-bottom: 2%;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between
+    }
+    .burger-menu{
+        display: none;
+        background-color: #1259c3;
+        border-radius: 8px;
+        color: white;
+        width: 40px;
+        margin: auto;
+        font-size: 20px;
+        padding:6px 12px;
+    }
+    .banner{
+        width:100%;
+    }
+main{
+    background-color:  #ebebeb;
+}
+section{
+    padding-left: 2%;
+    padding-right: 2%;
+    }
+    .carousel{
+    display: flex;
+    justify-content: space-evenly
+    }
+    .products{
+        text-align: center;
+        width: 20%;
+        margin-bottom: 5%;
+        transition: box-shadow 1250ms;
+    }
+    .products:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+   .image{
+        width: 100%;   
+    }
+    .left{
+        background-color: white;
+        text-align: left;  
+        padding: 10%;
+        position: relative;
+        height: 60px;
+    } 
+    .products:hover .left{
+        height: auto;
+    }
+    .delivery{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        color: #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        transition: transform 1500ms;
+    } 
+    .delivery:hover{
+        transform: rotateZ(-90deg);
+    }
+    .align{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price{
+        color: green;
+        margin-bottom: 5%;
+    }
+    .name{
+        color: darkgrey;
+        display: none;
+    }
+    .products:hover .name{
+        display: block;
+    }
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    text-align: center;
+    margin-top: 8%;
+    padding: 2%;
+    }
+    .icons{
+        color:#03264C;
+        font-size:50px;
+        transition:hover 1000ms;
+    }
+    .icons:hover{
+        color:rgb(226, 32, 97);
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+    align-items: center;
+}
+ .login{
+    width: 50%;
+    padding: 7% 2%;
+    margin-left: 25%;
+    text-align: center;
+ }
+ form label{
+    font-weight: bold;
+}
+ form input{
+ padding: 1%;
+ border: none;
+ border-radius: 8px;
+ width: 50%;
+ }
+ .login input{
+    padding: 1%;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    }
+ form div{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ form button{
+     background-color:#1259c3;
+     border: none;
+     border-radius: 8px;
+     color: #FFF;
+     text-align: center;
+     padding: 2% 10%;
+     width: 25vw;
+     margin:auto;
+ }
+ .login button{
+    background-color:#1259c3;
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    padding: 2% 10%;
+    margin-top: 10%;
+    width: 100%;
+}
+.enviar:hover{
+    background-color: #0022AA;
+}
+.borrar:hover{
+    background-color: rgb(226, 32, 97);
+}
+
+@media(max-width: 680px){ 
+    .head{ 
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    img{   
+        width: 200px;  
+    }
+    .busqueda{    
+        width: 150px;
+    }
+    .carousel{
+        flex-wrap: wrap;
+        justify-content: space-evenly
+        }
+    .products{
+        text-align: center;
+        width: 300px;
+        margin-bottom: 5%;
+        }
+    .shadow,.shadow-left{
+        box-shadow: none;
+    }
+    .center{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    form{
+        width: 500px;
+    }
+    form input{
+        width: 80%;
+        }
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 583px){ 
+    .head{ 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img{   
+        width: 100%;  
+    }
+    .burger-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .banner{
+        height:120px;
+    }
+    footer{
+        text-align:left;
+        }
+    .icons{
+        color:#03264C;
+        font-size:20px;
+    }
+    form{
+    width: 100vw;
+    }
+    form div{
+    flex-direction: column;
+    align-items: center;
+    }
+    form label{
+        font-weight: bold;
+    }
+    form button{
+        width: 80vw;
+    }
+    .left{
+        height: auto;
+    }
+    .name{
+        display: block;
+    }
+    .delivery:hover{
+        transform: rotateZ(-90deg);
+    }
+    .products:hover{
+        box-shadow: none;
+    }
+}
